@@ -61,14 +61,14 @@ function takeSelfie()
 {
     Webcam.snap(function(data_uri)
     {
-        document.getElementById("result").innerHTML = '<img id="selfieImage" src="'+data_uri'"/>';
+        document.getElementById("result").innerHTML = '<img id="selfieImage" src="'+data_uri+'"/>';
     });
 }
 
 function save()
 {
    link = document.getElementById("link");
-   image = document.getElementById("selfieImage").scr;
+   image = document.getElementById("selfieImage").src;
    link.href = image;
    link.click();
 }
